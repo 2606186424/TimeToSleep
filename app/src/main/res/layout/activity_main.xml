@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/logbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginBottom="144dp"
+        android:text="@string/statistic"
+        app:backgroundTint="#A33F51B5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <Button
+        android:id="@+id/setting_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginBottom="144dp"
+        android:text="@string/setting"
+        app:backgroundTint="#A43F51B5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <AnalogClock
+        android:id="@+id/analogClock"
+        android:layout_width="390dp"
+        android:layout_height="256dp"
+        android:dial="@drawable/dial"
+        android:hand_hour="@drawable/red_arrows"
+        android:hand_minute="@drawable/green_arrows"
+        android:rotationX="0"
+        android:rotationY="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.031" />
+
+    <TextView
+        android:id="@+id/show_limit"
+        android:layout_width="299dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="192dp"
+        android:text="@string/limitation_mins"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.562"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/h2use_button"
+        android:layout_width="360dp"
+        android:layout_height="36dp"
+        android:text="@string/how_to_use"
+        app:backgroundTint="#7E2D5580"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/analogClock" />
+
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="285dp"
+        android:layout_height="54dp"
+        android:max="100"
+        android:progress="0"
+        android:progressDrawable="@drawable/progressbar"
+        app:layout_constraintBottom_toTopOf="@+id/show_limit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/h2use_button"
+        app:layout_constraintVertical_bias="0.471" />
+
+    <EditText
+        android:id="@+id/timeshow"
+        style="@style/Widget.AppCompat.AutoCompleteTextView"
+        android:layout_width="66dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="108dp"
+        android:layout_marginRight="108dp"
+        android:clickable="false"
+        android:editable="false"
+        android:ems="10"
+        android:focusable="false"
+        android:inputType="time"
+        android:textColorHint="#EFEFEF"
+        android:textIsSelectable="false"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/progressBar2"
+        app:layout_constraintTop_toTopOf="@+id/progressBar2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,10 @@
+<bitmap
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:src="@drawable/cloud_bg"
+    android:antialias="true"
+    android:dither="true"
+    android:filter="true"
+    android:gravity="center"
+    android:mipMap="false"
+    android:tileMode="disabled"
+    />

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">TimeUP</string>
+    <string name="enter_a_number_1_to_60">ENTER A NUMBER (1 to 60)</string>
+    <string name="limitation_mins">Limitation (mins):</string>
+    <string name="last_time">LAST TIME</string>
+    <string name="duration">DURATION</string>
+    <string name="app">APP</string>
+    <string name="how_to_use"><![CDATA[<--HOW TO USE-->]]></string>
+    <string name="progress">----</string>
+    <string name="setting">SETTING</string>
+    <string name="statistic">STATISTIC</string>
+</resources>
